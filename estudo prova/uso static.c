@@ -18,5 +18,7 @@ int main()
     imprime(20);
     imprime(20);
     imprime(23);
+    imprime(7);
+    imprime(9);
     return 0;
 }
