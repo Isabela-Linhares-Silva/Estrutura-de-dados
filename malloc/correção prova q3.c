@@ -12,7 +12,7 @@ float ** cria_matriz(int l,int c){
     float **m = (float**) malloc(l*sizeof(float *));
     for(int i=0;i<l;i++)
     {
-        m[i]=(float*)malloc(sizeof(float));
+        m[i]=(float*)malloc(sizeof(float));//errada
         for(int j=0;j<c;j++)
         {
             m[i][j]=0.0;
@@ -22,7 +22,7 @@ float ** cria_matriz(int l,int c){
 }
 float ** soma_matriz(float **a, float **b, int l, int c){
     float ** R= cria_matriz(l,c);
-    for (int i=0;i<l,i++)
+    for (int i=0;i<l;i++)
     {
         for(int j=0;j<c;j++)
         {
